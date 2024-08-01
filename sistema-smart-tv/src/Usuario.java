@@ -23,7 +23,17 @@ public class Usuario {
         minhaSmartTv.diminuirVolume(45);
         System.out.println("Volume diminuido: "+ minhaSmartTv.volume);
         System.out.println();
-
+        
+        // Mudar de canal
+        minhaSmartTv.mudarCanal(13);
+        System.out.println();
+        
+        minhaSmartTv.mudarDeCanalBotaoSetaParaCima();
+        System.out.println("Canal: "+ minhaSmartTv.canal);
+        System.out.println();
+        minhaSmartTv.mudarDeCanalBotaoSetaParaBaixo();
+        System.out.println("Canal: "+ minhaSmartTv.canal);
+        System.out.println();
 
     }
 }
