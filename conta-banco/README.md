@@ -1,5 +1,9 @@
 # DIO - Trilha Java Básico
 
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=ffff&height=120&section=header"/>
+
+<h1 align="center">Olá! Eu sou o Herbert Felipe Emidio da Silva 👋</h1>
+
 [www.dio.me](http://www.dio.me)
 
 ## Autores
