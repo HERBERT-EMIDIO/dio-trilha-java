@@ -1,18 +1,71 @@
-## Getting Started
+# DIO - Trilha Java Básico
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+[www.dio.me](http://www.dio.me)
 
-## Folder Structure
+## Autores
+- **Gleyson Sampaio**
 
-The workspace contains two folders by default, where:
+## Projeto: ContaBanco
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Descrição
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+O projeto **ContaBanco** tem como objetivo exercitar o conteúdo apresentado no módulo de Sintaxe do curso Java Básico da DIO. O projeto permite a criação de um programa que coleta informações sobre uma conta bancária via terminal e exibe uma mensagem formatada com essas informações.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+### Funcionalidades
 
-## Dependency Management
+- **Coleta de Dados**: O programa solicita ao usuário informações sobre a conta bancária via terminal.
+- **Formatação de Mensagem**: Após a coleta dos dados, o programa exibe uma mensagem formatada com as informações fornecidas pelo usuário.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+### Atributos
+
+O programa deve lidar com os seguintes atributos:
+
+| Atributo     | Tipo    | Exemplo     |
+|--------------|---------|-------------|
+| Numero       | Inteiro | 1021        |
+| Agencia      | Texto   | 067-8       |
+| Nome Cliente | Texto   | MARIO ANDRADE |
+| Saldo        | Decimal | 237.48      |
+
+### Requisitos
+
+1. **Declaração de Variáveis**: Revise as regras de declaração de variáveis em Java.
+2. **Entrada de Dados**: Utilize a classe `Scanner` para receber dados do terminal.
+3. **Formatação de Mensagem**: Exiba uma mensagem formatada com as informações inseridas pelo usuário.
+
+### Exemplo de Código
+
+Crie a classe `ContaTerminal.java` com o seguinte código:
+
+```java
+import java.util.Scanner;
+
+public class ContaTerminal {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        // Coleta das informações
+        System.out.println("Por favor, digite o número da conta:");
+        int numero = scan.nextInt();
+        scan.nextLine(); // Limpar o buffer do scanner após a leitura do número
+
+        System.out.println("Por favor, digite o número da Agência:");
+        String agencia = scan.nextLine();
+
+        System.out.println("Por favor, digite o nome do cliente:");
+        String nomeCliente = scan.nextLine();
+
+        // Definir o saldo
+        double saldo = 237.48;
+
+        // Formatação e exibição da mensagem
+        String mensagem = String.format(
+            "Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$ %.2f já está disponível para saque.",
+            nomeCliente, agencia, numero, saldo
+        );
+        System.out.println(mensagem);
+
+        // Fechar o scanner
+        scan.close();
+    }
+}
