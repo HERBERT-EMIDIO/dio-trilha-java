@@ -17,7 +17,7 @@ public class ContaTerminal {
 
         // Solicitar ao Usuário as informaçoes da conta;
 
-        System.out.println("========================================");
+        System.out.println("=======================================");
         System.out.println("Por favor, digite  do número da conta!");
         int numero = scan.nextInt();
         scan.nextLine();
