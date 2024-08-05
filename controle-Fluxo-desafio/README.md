@@ -1,18 +1,37 @@
-## Getting Started
+# DesafioControleFluxo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
 
-## Folder Structure
+Este projeto foi desenvolvido como parte de um desafio para praticar o controle de fluxo em Java, juntamente com o tratamento de exceções personalizadas. O objetivo do projeto é criar um programa que receba dois números inteiros via terminal e, com base nesses números, realize uma série de interações (loops) imprimindo números incrementados. Caso o primeiro número seja maior que o segundo, o programa lança uma exceção customizada.
 
-The workspace contains two folders by default, where:
+## Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Receber dois números inteiros como entrada via terminal.
+- Verificar se o primeiro número é maior que o segundo.
+- Imprimir uma série de números incrementados no console.
+- Lançar uma exceção personalizada se o primeiro número for maior que o segundo.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Tecnologias Utilizadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **Java**: Linguagem de programação principal utilizada no projeto.
+- **IntelliJ IDEA**: IDE utilizada para o desenvolvimento do código.
+- **Terminal**: Para execução e teste do programa.
 
-## Dependency Management
+## Aprendizados
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Com este desafio, aprendi a:
+- Utilizar estruturas de controle de fluxo (`for` loops) em Java.
+- Manipular exceções customizadas.
+- Ler entradas do usuário via terminal.
+- Aplicar boas práticas de codificação em Java.
+
+## Estrutura do Projeto
+
+```plaintext
+DesafioControleFluxo
+│
+├── src
+│   ├── Contador.java
+│   └── ParametrosInvalidosException.java
+│
+└── README.md
